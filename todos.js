@@ -5,8 +5,6 @@ const session = require("express-session");
 const { body, validationResult } = require("express-validator");
 // postgreSQL database
 const PgPersistence = require('./lib/pg_persistence.js');
-// JSON database
-const JSONPersistence = require('./lib/json_persistence');
 
 const catchError = require('./lib/catch_error.js');
 const store = require("connect-loki");
